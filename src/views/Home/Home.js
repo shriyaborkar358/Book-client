@@ -11,7 +11,7 @@ function Home() {
 
  const loadBooks = async () =>{
    toast.loading("Loading Books....")
-   const response = await axios.get(`http://localhost:5000/books`)
+   const response = await axios.get(`https://book-server-2asq.onrender.com/books`)
 
    toast.dismiss()
    toast.success("Books loaded succesfully")

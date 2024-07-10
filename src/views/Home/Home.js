@@ -39,6 +39,7 @@ function Home() {
               category={category}
               price={price}
               description={description}
+              loadBooks={loadBooks}
             />
           </div>
         );

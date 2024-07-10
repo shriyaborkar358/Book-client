@@ -20,7 +20,7 @@
 
 .book-price{
     font-size: 20px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Times New Roman', Times, serif
 }
 
 .book-image{
@@ -33,5 +33,25 @@
 .book-description{
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+}
+
+.book-card-action-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.book-card-action-icon{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px 30px;
+    margin: 15px ;
+    border-radius: 10px;
+    border: none;
+}
+
+.book-card-action-icon:hover{
+    background-color: rgb(50, 50, 111);
+    color: white;
+    padding: 6px 33px;
 }

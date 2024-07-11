@@ -2,6 +2,7 @@ import React from "react";
 import "./BookCard.css";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 function BookCard({
   _id,
@@ -33,17 +34,23 @@ function BookCard({
       <p className="book-description">{description}</p>
 
       <div className="book-card-action-icon-container">
+
+        <Link to={`/update/${_id}`}
+         className="book-card-action-btn">
+          Edit</Link>
+
         <button
           type="button"
-          className="book-card-action-icon"
+          className="book-card-action-btn"
           onClick={() => {
             deleteBook(_id);
-          }}
-        >
-          delete
+          }}>
+          Delete
         </button>
+
+       
       </div>
-      
+
       <Toaster />
     </div>
   );

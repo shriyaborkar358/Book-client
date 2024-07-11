@@ -40,7 +40,7 @@ function AddBook() {
 
   return (
     <>
-      <div className="">
+      <div className="body">
         <h1 className="heading">Add Book</h1>
 
         <div className="form-container">
@@ -88,10 +88,10 @@ function AddBook() {
             />
             <div className="btn-conatainer">
               <button type="button" onClick={addBook} className="btn">
-                Add Button
+                Add Book
               </button>
               <br /> <br />
-              <Link to="/" className="home-path">
+              <Link to="/" className="home-path btn">
                 See all books
               </Link>
             </div>

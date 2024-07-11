@@ -24,13 +24,14 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="book">
       <h1 className="heading">Books</h1>
-      {books.map((book, i) => {
-        const { _id, name, image, category, price, description } = book;
 
-        return (
-          <div className="book-card-container">
+      <div className="book-card-container">
+        {books.map((book, i) => {
+          const { _id, name, image, category, price, description } = book;
+
+          return (
             <BookCard
               key={i}
               _id={_id}
@@ -41,9 +42,9 @@ function Home() {
               description={description}
               loadBooks={loadBooks}
             />
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
 
       <Toaster />
 

@@ -1,4 +1,6 @@
 .heading {
+  margin: 0;
+  padding: 8px 20px;
   text-align: center;
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -12,6 +14,7 @@
   margin: 20px auto;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: 0 0 10px gray;
 }
 
 .book-detail {
@@ -42,10 +45,14 @@
   margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
+  border: none;
+}
+
+.btn:hover{
+  box-shadow: 0 0 8px rgb(6, 6, 6);
 }
 
 .home-path {
   margin: 10px;
   text-decoration: none;
-  font-size: 20px;
 }

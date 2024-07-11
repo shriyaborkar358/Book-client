@@ -1,7 +1,7 @@
 .book-card-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .heading{
@@ -13,7 +13,6 @@
 .add-icon{
     height: 65px;
     position: fixed;
-    right: 20px;
+    right: 40px;
     bottom: 25px;
-    z-index: 100;
 }
